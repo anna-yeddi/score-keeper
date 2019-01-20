@@ -1,0 +1,124 @@
+html {
+	--dark: #203649;
+	--prime: #405e79;
+	--green: #35c055;
+	--light: #6dda86;
+	--transp: #6dda8693;
+	background: linear-gradient(var(--prime) 15%, var(--dark) 85%) no-repeat center center fixed var(--dark);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	font-family: 'Dosis', sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+	min-height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+main.container {
+	width: 80%;
+	margin: 1.5rem auto;
+	min-height: calc(100vh - 4.5rem);
+	display: -ms-flexbox;
+	-ms-flexbox-wrap: wrap;
+	-ms-flexbox-direction: column;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 3.5rem;
+	margin: 0;
+}
+
+.winner {
+	background-color: var(--transp);
+	padding: 0 1rem;
+}
+
+.setRules {
+	margin: .5rem 0;
+}
+
+.messageDisplay {
+	text-align: center;
+	font-size: .65rem;
+	margin: .5rem 0;
+	color: var(--transp)
+}
+
+button {
+	font-family: inherit;
+	font-weight: normal;
+    font-size: .8rem;
+    color: inherit;
+	margin: .5rem;
+	padding: .5rem;
+    font-weight: inherit;
+    letter-spacing: inherit;
+	text-align: center;
+	border: 1px solid var(--dark);
+	box-shadow: .1em .1em .1em var(--dark);
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+}
+
+input#winningScore {
+	font-size: 1.2em;
+	font-family: inherit;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: .1rem;
+	color: var(--green);
+	width: 3rem;
+	padding: 0;
+	background: transparent;
+	border: none;
+	box-shadow: 0 .1em var(--dark);
+
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+.playerScores, .reset {
+	flex: 1;
+}
+
+button#p1 {
+	background: linear-gradient(var(--light) 25%, var(--green) 75%);
+}
+
+button#p2 {
+	background: linear-gradient(var(--green) 25%, var(--light) 75%);
+}
+
+button#reset {
+	background-color: var(--prime);
+	color: var(--light);
+	width: 6rem;
+}
+
+footer {
+	text-align: right;
+	font-size: .55rem;
+	padding: 0 1rem;
+	color: var(--transp)
+}

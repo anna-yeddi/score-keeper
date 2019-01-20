@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Score Keeper</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:500" rel="stylesheet">
+	<link rel="shortcut icon" href="img/target-34560_pixabay.png">
+</head>
+<body>
+
+<main class="container">
+	<h1><span id="p1Display">0</span> : <span id="p2Display">0</span></h1>
+	
+	<div class="setRules">Playing to: 
+			<input type="number" id="winningScore" name="winningScore" aria-describedby="rules" 
+			value="5" step="1" min="1" minlength="1" size="4" autofocus>
+				<!-- <span id="maxScore">5</span></p> -->
+	</div>
+	<div class="messageDisplay">
+		Set winning score and click buttons below to add points.
+	</div>
+	<div class="playerScores">
+		<button id="p1" accesskey="o">Player <u>O</u>ne</button>
+		<button id="p2" accesskey="t">Player <u>T</u>wo</button>
+	</div>
+	<div class="reset">
+		<button id="reset" accesskey="r"><u>R</u>eset</button>
+	</div>
+</main>
+
+<footer>© Anna Kova, 2018<span id="date"></span>.
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131142493-1"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
