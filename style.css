@@ -22,8 +22,8 @@ html {
 
 main.container {
 	width: 80%;
-	margin: 1.5rem auto;
-	min-height: calc(100vh - 4.5rem);
+	margin: 1rem auto;
+	min-height: calc(100vh - 4rem);
 	display: -ms-flexbox;
 	-ms-flexbox-wrap: wrap;
 	-ms-flexbox-direction: column;
@@ -110,10 +110,22 @@ button#p2 {
 	background: linear-gradient(var(--green) 25%, var(--light) 75%);
 }
 
+button#p1:hover {
+	background: linear-gradient(var(--green) 25%, var(--light) 75%);
+}
+
+button#p2:hover {
+	background: linear-gradient(var(--light) 25%, var(--green) 75%);
+}
+
 button#reset {
-	background-color: var(--prime);
+	background: linear-gradient(var(--prime), var(--dark));
 	color: var(--light);
 	width: 6rem;
+}
+
+button#reset:hover {
+	background: linear-gradient(var(--dark), var(--prime));
 }
 
 footer {
