@@ -4,8 +4,6 @@ let resetButton = document.querySelector("#reset");
 let p1Display = document.querySelector("#p1Display");
 let p2Display = document.getElementById("p2Display");
 let numInput = document.querySelector("input");
-// let numInput = document.querySelector("input[type='number']");
-// let winningScoreDisplay = document.querySelector("p span");
 let message = document.querySelector('.messageDisplay');
 let p1Score = 0;
 let p2Score = 0;
@@ -17,7 +15,7 @@ p1Button.addEventListener("click", function(){
 		p1Score++;
 		message.textContent = `Score to Player One: ${p1Score} to ${p2Score}`;
 		p1Display.textContent = p1Score;
-		// p1Display.prototype.classList.color = "var(--light)";
+		// p1Display.style.color = "var(--light)";
 		if(p1Score === winningScore) {
 			message.textContent = `GAME OVER! Player One wins`;
 			p1Display.classList.add("winner");
@@ -64,20 +62,6 @@ function reset() {
 	p2Display.textContent = p2Score;
 	gameOver = false;
 }
-
-// let score = document.querySelector("#score");
-
-// p1Button.addEventListener("click", addValue)
-
-// function addValue() {
-// 	if(score > one && score > two) {
-// 	document.querySelector(".one") += 1;
-// 	return
-// 	} else {
-// 		alert("Game over. Click RESET")
-// 	}
-// }
-
 
 // Copyright Date Script
 let dates = document.querySelector('span#date');
