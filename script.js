@@ -29,7 +29,7 @@ p1Button.addEventListener("click", function(){
 p2Button.addEventListener("click", function(){
 	if(!gameOver) {
 		p2Score++;
-		message.textContent = `Score to Player One: ${p1Score} to ${p2Score}`;
+		message.textContent = `Score to Player Two: ${p1Score} to ${p2Score}`;
 		p2Display.textContent = p2Score;
 		if(p2Score === winningScore) {
 			message.textContent = `GAME OVER! Player Two wins`;
